@@ -1,0 +1,151 @@
+* {
+  border: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: hsl(0, 0%, 94%);
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  flex-direction: column;
+  padding: 0 5%;
+}
+
+.age-calc-container {
+  background-color: hsl(0, 0%, 100%);
+  margin: 4rem;
+  padding: 30px 20px;
+  width: 100%;
+  border-radius: 10px 10px 90px 10px;
+  max-width: 550px;
+}
+
+.age-input-field,
+.required-field {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 340px;
+  gap: 10px;
+}
+
+.date-input-field {
+  max-width: 100px;
+  font-size: 10px;
+  font-weight: 700;
+  color: hsl(0, 1%, 44%);
+  letter-spacing: 2px;
+}
+
+.date-field {
+  width: 100%;
+  height: 35px;
+  border: 1px solid hsl(0, 0%, 70%);
+  border-radius: 3px;
+  margin-top: 3px;
+  font-weight: 800;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.date-field:focus-visible {
+  border: 1.5px solid hsla(259, 100%, 65%, 0.712);
+  outline: hsla(259, 100%, 65%, 0.712);
+}
+.css-reqiured-field {
+  margin-top: 5px;
+  font-size: 10px;
+  color: hsl(0, 100%, 67%);
+  font-style: italic;
+  font-weight: 400;
+  letter-spacing: normal;
+  line-height: 12px;
+}
+
+.arrow-section {
+  width: 100%;
+  height: auto;
+  position: relative;
+  margin: 25px 0;
+  display: grid;
+  place-items: center;
+}
+
+.arrow-conatiner {
+  background-color: hsl(259, 100%, 65%);
+  width: 50px;
+  height: 50px;
+  display: flex;
+  border-radius: 25px;
+  z-index: 1;
+  position: relative;
+  margin: 0 auto;
+  cursor: pointer;
+}
+
+.arrow-conatiner:hover {
+  background-color: hsl(0, 0%, 8%);
+  transition: 950ms ease;
+}
+
+hr {
+  width: 100%;
+  border-top: 1px solid hsla(0, 0%, 65%, 0.529);
+  margin: 10px auto;
+  position: absolute;
+}
+.img-arrow {
+  width: 20px;
+  height: 25px;
+  margin: auto;
+}
+.age-result {
+  display: flex;
+  font-size: 40px;
+  font-weight: 800;
+  font-style: italic;
+  height: 45px;
+}
+
+.age-num {
+  color: hsl(259, 100%, 65%);
+}
+
+.attribution {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  flex-direction: column;
+  font-size: 10px;
+}
+
+@media (min-width: 900px) {
+  .age-calc-container {
+    padding: 50px 50px;
+    max-width: 700px;
+  }
+  .date-field {
+    height: 40px;
+    font-size: 15px;
+  }
+
+  .arrow-section {
+    justify-content: flex-end;
+    margin: 15px 0;
+  }
+
+  .arrow-conatiner {
+    width: 60px;
+    height: 60px;
+    border-radius: 30px;
+  }
+
+  .age-result {
+    font-size: 55px;
+    height: 70px;
+  }
+}

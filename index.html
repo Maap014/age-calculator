@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,400;1,800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="age-style.css" />
+    <title>Age calculator</title>
+  </head>
+  <body>
+    <section class="age-calc-container">
+      <section class="age-input-field">
+        <div class="date-input-field">
+          <p class="js-display-date">DAY</p>
+          <input
+            type="text"
+            id="js-day"
+            name="day"
+            class="date-field js-input-border"
+            placeholder="DD"
+            minlength="1"
+            maxlength="2"
+            inputmode="
+            numeric"
+            pattern="[0-9]"
+            required
+          />
+        </div>
+        <div class="date-input-field">
+          <p class="js-display-date">MONTH</p>
+          <input
+            type="text"
+            id="js-month"
+            name="month"
+            class="date-field js-input-border"
+            placeholder="MM"
+            minlength="1"
+            maxlength="2"
+            inputmode="
+            numeric"
+            pattern="[0-9]"
+            required
+          />
+        </div>
+        <div class="date-input-field">
+          <p class="js-display-date">YEAR</p>
+          <input
+            type="text"
+            id="js-year"
+            name="year"
+            class="date-field js-input-border"
+            minlength="4"
+            maxlength="4"
+            placeholder="YYYY"
+            minlength="4"
+            maxlength="4"
+            inputmode="
+            numeric"
+            pattern="[0-9]"
+            required
+          />
+        </div>
+      </section>
+      <div class="required-field">
+        <p class="css-reqiured-field js-day-req-field js-required-field"></p>
+        <p class="css-reqiured-field js-month-req-field js-required-field"></p>
+        <p class="css-reqiured-field js-year-req-field js-required-field"></p>
+      </div>
+
+      <section class="arrow-section">
+        <hr />
+        <div class="arrow-conatiner" id="js-submit-btn">
+          <img src="assets/images/icon-arrow.svg" alt="" class="img-arrow" />
+        </div>
+      </section>
+      <section class="age-display-conatiner">
+        <div class="age-result">
+          <p class="age-num js-age-years">- -</p>
+          <p>years</p>
+        </div>
+        <div class="age-result">
+          <p class="age-num js-age-months">- -</p>
+          <p>months</p>
+        </div>
+        <div class="age-result">
+          <p class="age-num js-age-days">- -</p>
+          <p>days</p>
+        </div>
+      </section>
+    </section>
+
+    <div class="attribution">
+      <p>
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >
+      </p>
+      <p>
+        Coded by <a href="https://github.com/Maap014" target="_blank">Maap.</a>
+      </p>
+    </div>
+
+    <script defer src="index.js"></script>
+  </body>
+</html>
