@@ -10,14 +10,14 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 100vh;
   flex-direction: column;
   padding: 0 5%;
+  max-height: 100vh;
 }
 
 .age-calc-container {
   background-color: hsl(0, 0%, 100%);
-  margin: 4rem;
+  margin: 19vh 0;
   padding: 30px 20px;
   width: 100%;
   border-radius: 10px 10px 90px 10px;
@@ -50,6 +50,7 @@ body {
   font-weight: 800;
   padding: 10px;
   cursor: pointer;
+  font-size: 16px;
 }
 
 .date-field:focus-visible {
@@ -116,10 +117,8 @@ hr {
 }
 
 .attribution {
-  display: flex;
-  justify-content: flex-end;
-  align-items: flex-end;
-  flex-direction: column;
+  display: grid;
+  place-self: flex-end;
   font-size: 10px;
 }
 
